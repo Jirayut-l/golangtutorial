@@ -64,6 +64,8 @@ func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
 	fmt.Println("Testmerthe2")
 	fmt.Println("YeWdc#DA@131")
+	fmt.Println("Test21341ASDAS1231")
+	fmt.Println("TestMergwe#MZKDNMA")
 	fmt.Println(h.name, h.age, h.isAdult)
 	fmt.Println("TestMergwe#AD12313")
 }
