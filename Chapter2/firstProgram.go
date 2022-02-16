@@ -62,7 +62,7 @@ type human struct {
 
 func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println(h.name, h.age, h.isAdult)
+	fmt.Println("TestMerg2")
 	fmt.Println(h.name, h.age, h.isAdult)
 }
 
