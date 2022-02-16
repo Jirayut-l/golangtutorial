@@ -62,16 +62,12 @@ type human struct {
 
 func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("!@#(8NMAMNs12")
+	fmt.Println("!@#(ASD12312Test123")
 	fmt.Println("M23#DA@131")
-	fmt.Println("M451")
-	fmt.Println("ASLl112#MZKDNMA")
-	fmt.Println("MS41")
-	fmt.Println("Dasl12#DA@131")
 	fmt.Println("ddl1k3")
-	fmt.Println("TestMergweasdZZ#ASd10p--23")
+	fmt.Println("M23#ASd10p--23")
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("TestMergwe#AD1231ASDASd1o0238!231")
+	fmt.Println("Ma2")
 }
 
 func setAdult(h *human) {
