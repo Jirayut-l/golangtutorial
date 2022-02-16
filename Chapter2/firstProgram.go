@@ -32,7 +32,7 @@ func main() {
 	//fmt.Println(result)
 
 	//Structs
-	//somChai := human{name: "Jirayut", age: 27}
+	// somChai := human{name: "Jirayut", age: 27}
 	//somChai.printInfo()
 	//setAdult(&somChai)
 	//fmt.Println(somChai)
@@ -61,6 +61,8 @@ type human struct {
 }
 
 func (h human) printInfo() {
+	fmt.Println(h.name, h.age, h.isAdult)
+	fmt.Println(h.name, h.age, h.isAdult)
 	fmt.Println(h.name, h.age, h.isAdult)
 }
 
