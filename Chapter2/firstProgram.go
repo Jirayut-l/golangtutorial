@@ -62,10 +62,10 @@ type human struct {
 
 func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("TestMerg2Asd")
-	fmt.Println("TestMergwe#123ASD123123zs")
+	fmt.Println("Testmerthe2")
+	fmt.Println("YeWdc#DA@131")
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("TestMergwe#E123ASE1231231")
+	fmt.Println("TestMergwe#AD12313")
 }
 
 func setAdult(h *human) {
