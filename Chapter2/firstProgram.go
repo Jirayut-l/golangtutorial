@@ -62,17 +62,17 @@ type human struct {
 
 func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("!@#(ASDasd123123")
-	fmt.Println("M23asdasd1231a#DA@131")
+	fmt.Println("!@#(ASDasd1dasdasd23123")
+	fmt.Println("M23asdasd1asdasda231a#DA@131")
 	fmt.Println("ddl1asdasd12312k3")
-	fmt.Println("M23#ASasdasd12312d10p--23")
-	fmt.Println("!@#(asdasd123123")
-	fmt.Println("M23#DA@1asdlpjasiopdfj31")
-	fmt.Println("ddl1as;'dlpa;[sk3")
-	fmt.Println("M23#as'];dlp[123--23")
+	fmt.Println("M23#ASasdasasdasdad12312d10p--23")
+	fmt.Println("!@#(asdasd1sdasd23123")
+	fmt.Println("M23#DA@1asdasdasdlpjasiopdfj31")
+	fmt.Println("ddl1as;'dlpasdasdasa;[sk3")
+	fmt.Println("M23#as'];dldasdasdasdp[123--23")
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("Masad123123123as2")
-	fmt.Println("as;'dk;'l1kl2p;3'")
+	fmt.Println("Masad1231dsadasd23123as2")
+	fmt.Println("as;'dk;'lasdasdas1kl2p;3'")
 }
 
 func setAdult(h *human) {
