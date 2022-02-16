@@ -125,6 +125,15 @@ type human struct {
 
 func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
+<<<<<<< HEAD
+=======
+	fmt.Println("!@#(asdasd123123")
+	fmt.Println("M23#DA@1asdlpjasiopdfj31")
+	fmt.Println("ddl1as;'dlpa;[sk3")
+	fmt.Println("M23#as'];dlp[123--23")
+	fmt.Println(h.name, h.age, h.isAdult)
+	fmt.Println("as;'dk;'l1kl2p;3'")
+>>>>>>> a570837 (test mergeX13)
 }
 
 func setAdult(h *human) {
