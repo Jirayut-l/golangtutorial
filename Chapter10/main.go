@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main10x() {
 	//Concurrency
 	go numbers()
 	go alphabets()

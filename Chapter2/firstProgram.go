@@ -40,6 +40,69 @@ func main() {
 	x := 8
 	zero(&x)
 	fmt.Println(x)
+
+	//Zero Value
+	var xx1 int  //default value
+	var xx2 bool //default value
+	x1 := 0
+	x2 := false
+	fmt.Println(x1, x2, xx1, xx2)
+
+	//if statement
+	point := 50
+	if point >= 50 && point <= 100 {
+		fmt.Println("more than 50")
+	} else if point <= 20 {
+		fmt.Println("less than 20")
+	}
+
+	// array
+	x323 := [...]int{1, 2, 3, 4, 5, 6, 7}
+	fmt.Println(x323)
+	//slice array  = list
+	x324 := []int{1, 2, 3}
+	x324 = append(x324, 4) //==add
+
+	//anonymous function
+	xAntony := func(a, b int) int {
+		return a + b
+	}
+	sumXa := xAntony(10, 20)
+	println(sumXa)
+	call(add)
+	call(xAntony)
+	//slice sent to function
+	v1 := []int{1, 2, 3}
+	s1 := sum(v1)
+	_ = s1
+	v2 := sum1(1, 2, 3, 4, 5)
+	_ = v2
+
+}
+
+func call(f func(int, int) int) {
+	sum := f(50, 10)
+	println(sum)
+}
+
+func add(a, b int) int {
+	return a + b
+}
+
+func sum(a []int) int {
+	s := 0
+	for _, v := range a {
+		s += v
+	}
+	return s
+}
+
+func sum1(a ...int) int {
+	s := 0
+	for _, v := range a {
+		s += v
+	}
+	return s
 }
 
 func printFullName(firstName string, lastName string) string {
@@ -62,19 +125,6 @@ type human struct {
 
 func (h human) printInfo() {
 	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("!@#(ASDasd1das33333333dasdasdasd23123")
-	fmt.Println("M23asdasd1dasda22222sdas231a#DA@131")
-	fmt.Println("ddl1asdasasda2222sdasd12312k3")
-	fmt.Println("M23#ASasdas222222d12312d10p--23")
-	fmt.Println("!@#(asdasd123123")
-	fmt.Println("M23#DA@1asdlpjasiopdfj31")
-	fmt.Println("ddl1as;'dlpa;[sk3")
-	fmt.Println("M23#as'];dlp[123--23")
-	fmt.Println(h.name, h.age, h.isAdult)
-	fmt.Println("Masad1231231dasdasdasd23as2")
-	fmt.Println("as;'dk;'asdasdasl1kl2p;3'")
-	fmt.Println("Masad1231dsadasd23123as2")
-	fmt.Println("as;'dk;'lasdasdas1kl2p;3'")
 }
 
 func setAdult(h *human) {

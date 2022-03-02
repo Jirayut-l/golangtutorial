@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	//var x [5]float64 x[0] = 98 x[1] = 93 x[2] = 77 x[3] = 82 x[4] = 83
 	//x := [5]float64{98, 93, 77, 82, 83}
@@ -26,43 +28,46 @@ func main() {
 	//elements := make(map[string]string) elements["H"] = "Hydrogen"
 	//elements["He"] = "Helium" elements["Li"] = "Lithium" elements["Be"] =
 	//"Beryllium" elements["B"] = "Boron" elements["C"] = "Carbon" elements["N"] =
-	//"Nitrogen" elements["O"] = "Oxygen" elements["F"] = "Fluorine" elements["Ne"]
-	//= "Neon"
-	//elements := map[string]string{
-	//	"H":  "Hydrogen",
-	//	"He": "Helium",
-	//	"Li": "Lithium",
-	//	"Be": "Beryllium",
-	//	"B":  "Boron",
-	//	"C":  "Carbon",
-	//	"N":  "Nitrogen",
-	//	"O":  "Oxygen",
-	//	"F":  "Fluorine",
-	//	"Ne": "Neon",
-	//}
-	////delete(elements, "C")
+	//"Nitrogen" elements["O"] = "Oxygen" elements["F"] = "Fluorine" elements["Ne"]= "Neon"
+	elements := map[string]string{
+		"H":  "Hydrogen",
+		"He": "Helium",
+		"Li": "Lithium",
+		"Be": "Beryllium",
+		"B":  "Boron",
+		"C":  "Carbon",
+		"N":  "Nitrogen",
+		"O":  "Oxygen",
+		"F":  "Fluorine",
+		"Ne": "Neon",
+	}
+	//delete(elements, "C")
 	//if name, success := elements["H"]; true {
 	//	fmt.Println(name, success)
 	//}
-	//
-	//var elementsX2 = map[string]map[string]string{
-	//	"H": {
-	//		"name":  "Hydrogen",
-	//		"state": "gas",
-	//	},
-	//	"He": {
-	//		"name":  "Helium",
-	//		"state": "gas",
-	//	},
-	//	"Li": {
-	//		"name":  "Lithium",
-	//		"state": "solid",
-	//	},
-	//}
-	//
-	//if name, status := elementsX2["He"]["name"]; true {
-	//	fmt.Println(name, status)
-	//}
+	name, ok := elements["H"]
+	if ok {
+		fmt.Println(name, ok)
+	}
+
+	var elementsX2 = map[string]map[string]string{
+		"H": {
+			"name":  "Hydrogen",
+			"state": "gas",
+		},
+		"He": {
+			"name":  "Helium",
+			"state": "gas",
+		},
+		"Li": {
+			"name":  "Lithium",
+			"state": "solid",
+		},
+	}
+
+	if name, status := elementsX2["He"]["name"]; true {
+		fmt.Println(name, status)
+	}
 
 	//EX
 	//xEx := [6]string{"a", "b", "c", "d", "e", "f"}
